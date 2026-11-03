@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - WEB DEVELOPMENT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Martins Amorin's WDD 231 course home page, with an introduction and interactive Web and Computer Programming certificate courses.">
+  <meta name="author" content="Martins Chinedu Amorin">
+  <meta name="theme-color" content="#102a43">
+  <title>Home | Martins Amorin | WDD 231</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - WEB DEVELOPMENT</h1>
-    <p>Welcome to Web Development!</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="identity">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <span>Martins Amorin</span>
+    </div>
+    <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="chamber/index.html">Chamber</a>
+      <a href="final/index.html">Final</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-container">
+    <h1>Home</h1>
+    <div class="intro-grid">
+      <section class="panel about-panel">
+        <h2>About Me</h2>
+        <div class="panel-content">
+          <p>Hello! I'm <strong>Martins Chinedu Amorin</strong>, a technology enthusiast and web development student from Nigeria. I enjoy learning how technology can solve practical problems and make everyday experiences better.</p>
+          <p>My interests include web development, cybersecurity, IT support, and building useful digital solutions. I am developing my skills in HTML, CSS, JavaScript, and programming through BYU-Pathway Worldwide.</p>
+          <p>My goal is to become a capable developer who creates accessible, responsive, and user-friendly web experiences.</p>
+        </div>
+      </section>
+      <section class="panel photo-panel">
+        <h2>Student Photo</h2>
+        <figure class="profile-figure">
+          <img src="images/profile-placeholder.svg" alt="Illustrated profile placeholder for Martins Amorin" width="420" height="420">
+          <figcaption>Martins Chinedu Amorin</figcaption>
+        </figure>
+        <p class="photo-note">Replace this illustration with your own optimized photo before submitting.</p>
+      </section>
+    </div>
+
+    <section class="panel certificate-panel">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="course-controls" aria-label="Filter certificate courses">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All Courses</button>
+        <button class="filter-button" type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+        <button class="filter-button" type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+      </div>
+      <p class="course-summary" aria-live="polite"><span id="course-count">Loading courses…</span><span class="summary-divider">|</span><strong id="credit-total">0 credits</strong></p>
+      <div id="course-list" class="course-grid" aria-live="polite"></div>
+      <p class="completion-key"><span class="key-swatch completed-swatch"></span> Completed <span class="key-swatch pending-swatch"></span> Not completed</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="social-links" aria-label="Social media links">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/martins-amorin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>© <span id="currentyear"></span> Martins Chinedu Amorin · Nigeria</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
