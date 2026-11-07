@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Tech illustration">
+<rect width="640" height="360" rx="24" fill="#dcefe6"/>
+<circle cx="320" cy="150" r="88" fill="#123d2a"/>
+<text x="320" y="180" text-anchor="middle" font-size="90" fill="#f4bd50" font-family="Arial,sans-serif">⌘</text>
+<text x="320" y="300" text-anchor="middle" font-size="30" letter-spacing="6" font-weight="700" fill="#123d2a" font-family="Arial,sans-serif">TECH</text>
+</svg>

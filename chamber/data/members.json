@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Capital Tech Solutions",
+    "address": "Plot 18, Aminu Kano Crescent, Wuse II, Abuja, FCT",
+    "phone": "+234 809 100 2001",
+    "website": "https://example.com/capital-tech",
+    "image": "capital-tech.svg",
+    "membershipLevel": 3,
+    "category": "Technology",
+    "description": "Digital transformation, managed IT support and business software services.",
+    "email": "hello@capitaltech.example"
+  },
+  {
+    "name": "Savannah Harvest Foods",
+    "address": "Suite 12, Garki International Market, Garki, Abuja, FCT",
+    "phone": "+234 809 100 2002",
+    "website": "https://example.com/savannah-harvest",
+    "image": "savannah-harvest.svg",
+    "membershipLevel": 2,
+    "category": "Agriculture & Food",
+    "description": "Farm-fresh produce sourcing and food distribution for homes and businesses.",
+    "email": "team@savannah.example"
+  },
+  {
+    "name": "Unity Crest Suites",
+    "address": "24 Adetokunbo Ademola Crescent, Wuse II, Abuja, FCT",
+    "phone": "+234 809 100 2003",
+    "website": "https://example.com/unity-crest",
+    "image": "unity-crest.svg",
+    "membershipLevel": 3,
+    "category": "Hospitality",
+    "description": "Comfortable short-stay accommodation and meeting facilities.",
+    "email": "stay@unitycrest.example"
+  },
+  {
+    "name": "MetroLink Logistics",
+    "address": "Block B, Area 3 Shopping Complex, Garki, Abuja, FCT",
+    "phone": "+234 809 100 2004",
+    "website": "https://example.com/metrolink",
+    "image": "metrolink.svg",
+    "membershipLevel": 2,
+    "category": "Logistics",
+    "description": "Reliable local delivery, haulage coordination and business logistics.",
+    "email": "dispatch@metrolink.example"
+  },
+  {
+    "name": "NileBridge Financial Services",
+    "address": "Suite 6, Jabi Lake Mall area, Jabi, Abuja, FCT",
+    "phone": "+234 809 100 2005",
+    "website": "https://example.com/nilebridge",
+    "image": "nilebridge.svg",
+    "membershipLevel": 3,
+    "category": "Financial Services",
+    "description": "Small-business bookkeeping, financial literacy and advisory support.",
+    "email": "connect@nilebridge.example"
+  },
+  {
+    "name": "GreenLine Retail Hub",
+    "address": "Shop 21, Ceddi Plaza, Central Area, Abuja, FCT",
+    "phone": "+234 809 100 2006",
+    "website": "https://example.com/greenline",
+    "image": "greenline.svg",
+    "membershipLevel": 1,
+    "category": "Retail",
+    "description": "Everyday essentials, locally made products and office supplies.",
+    "email": "sales@greenline.example"
+  },
+  {
+    "name": "Apex Skills & Training",
+    "address": "No. 9, Libreville Street, Wuse II, Abuja, FCT",
+    "phone": "+234 809 100 2007",
+    "website": "https://example.com/apex-skills",
+    "image": "apex-skills.svg",
+    "membershipLevel": 1,
+    "category": "Professional Services",
+    "description": "Workplace training, employability programmes and professional development.",
+    "email": "learn@apexskills.example"
+  }
+]

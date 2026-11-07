@@ -1,0 +1,63 @@
+/* Abuja Chamber: mobile-first styles */
+:root {
+  --green: #123d2a;
+  --green-2: #1d593d;
+  --gold: #a96500;
+  --gold-light: #f4bd50;
+  --ink: #1f2c25;
+  --muted: #526158;
+  --paper: #f7f8f5;
+  --white: #fff;
+  --line: #dce4dc;
+  --shadow: 0 8px 24px rgba(18,61,42,.08);
+}
+body { min-width: 320px; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.55; }
+a { color: #175c3b; }
+a:focus-visible, button:focus-visible { outline: 3px solid #9a5700; outline-offset: 3px; }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 30; padding: .75rem 1rem; background: white; color: #123d2a; }
+.skip-link:focus { left: .75rem; top: .75rem; }
+.site-header { min-height: 76px; padding: .7rem max(1rem, calc((100% - 1160px)/2)); display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: relative; background: var(--green); color: white; }
+.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; line-height: 1.2; }
+.brand img { width: 46px; height: 46px; }
+.brand span { display: grid; }
+.brand strong { font-size: 1.05rem; letter-spacing: .01em; }
+.brand small { color: #f8d995; font-size: .8rem; }
+.menu-button { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid #c6d8cb; border-radius: 7px; background: transparent; }
+.menu-icon, .menu-icon::before, .menu-icon::after { display: block; width: 21px; height: 2px; background: white; content: ""; }
+.menu-icon { position: relative; }
+.menu-icon::before { position: absolute; top: -7px; }
+.menu-icon::after { position: absolute; top: 7px; }
+.primary-nav { display: none; position: absolute; z-index: 10; top: 100%; left: 0; right: 0; background: #194c34; }
+.primary-nav.open { display: flex; flex-direction: column; }
+.primary-nav a { padding: .85rem 1.25rem; color: white; text-decoration: none; font-weight: 700; border-top: 1px solid #47745b; }
+.primary-nav a[aria-current="page"] { color: #ffe0a0; border-left: 4px solid var(--gold-light); }
+.page-container { width: min(1160px, calc(100% - 2rem)); margin: 2rem auto 3rem; }
+.page-intro { padding: 1.5rem 0 1.4rem; border-bottom: 1px solid var(--line); }
+.eyebrow { color: #805000; font-size: .75rem; font-weight: 800; letter-spacing: .13em; }
+h1 { margin: .35rem 0 .6rem; color: var(--green); font-size: clamp(2rem, 7vw, 3.1rem); line-height: 1.1; letter-spacing: -.035em; }
+.intro-copy { max-width: 650px; color: var(--muted); font-size: 1.05rem; }
+.directory-section { margin-top: 1.8rem; }
+.directory-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+.directory-heading h2 { color: var(--green); font-size: 1.45rem; }
+.member-count { color: var(--muted); font-size: .9rem; }
+.view-controls { display: flex; gap: .5rem; }
+.view-button { min-height: 42px; padding: .5rem .9rem; border: 1px solid #315d43; border-radius: 6px; background: white; color: var(--green); font-weight: 700; }
+.view-button.active { background: var(--green); color: white; }
+.member-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.member-card { min-width: 0; overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
+.member-image { width: 100%; height: 155px; object-fit: cover; background: #e9eee9; }
+.member-content { padding: 1rem; }
+.member-content h3 { margin: 0 0 .25rem; color: var(--green); font-size: 1.15rem; line-height: 1.3; overflow-wrap: anywhere; }
+.member-category { display: inline-block; margin-bottom: .6rem; color: #795000; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.member-description { margin-bottom: .8rem; color: var(--muted); font-size: .93rem; }
+.member-details { display: grid; gap: .3rem; color: var(--ink); font-size: .9rem; overflow-wrap: anywhere; }
+.member-details a { font-weight: 700; }
+.membership { display: inline-block; justify-self: start; margin-top: .75rem; padding: .18rem .55rem; border-radius: 20px; background: #edf3ed; color: #214b31; font-size: .75rem; font-weight: 800; }
+.sample-note { margin-top: 1.5rem; padding: .9rem 1rem; border-left: 4px solid #9a5700; background: #fff6e7; color: #49320e; font-size: .88rem; }
+.loading-message, .error-message { padding: 1rem; color: var(--muted); }
+.site-footer { padding: 2rem 1rem; background: #102f21; color: white; }
+.footer-inner { width: min(1160px, 100%); margin: 0 auto; display: grid; gap: 1.5rem; }
+.footer-contact h2 { margin-bottom: .5rem; color: #ffe0a0; font-size: 1.1rem; }
+.footer-contact p, .footer-project p { margin: .25rem 0; font-size: .9rem; }
+.footer-project { color: #e1ebe3; }
+@media (max-width: 360px) { .brand strong { font-size: .94rem; } .view-button { padding-inline: .65rem; } }

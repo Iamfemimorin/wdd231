@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Abuja Chamber of Commerce sample business directory and connect with businesses across Nigeria's Federal Capital Territory.">
+  <meta name="author" content="Martins Chinedu Amorin">
+  <meta name="theme-color" content="#123d2a">
+  <title>Business Directory | Abuja Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Business Directory | Abuja Chamber of Commerce">
+  <meta property="og:description" content="Discover and connect with businesses in Abuja, Federal Capital Territory, Nigeria.">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/wdd231/chamber/images/og-abujachamber.png">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/members.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="directory.html" aria-label="Abuja Chamber of Commerce home">
+      <img src="images/favicon.svg" alt="" width="48" height="48">
+      <span><strong>Abuja Chamber</strong><small>of Commerce</small></span>
+    </a>
+    <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html" aria-current="page">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-container">
+    <section class="page-intro">
+      <p class="eyebrow">ABUJA · FEDERAL CAPITAL TERRITORY</p>
+      <h1>Business Directory</h1>
+      <p class="intro-copy">Discover local organizations, services and opportunities. Stronger connections build a stronger business community.</p>
+    </section>
+
+    <section class="directory-section" aria-labelledby="directory-heading">
+      <div class="directory-heading">
+        <div>
+          <h2 id="directory-heading">Our Members</h2>
+          <p id="member-count" class="member-count" aria-live="polite">Loading member directory…</p>
+        </div>
+        <div class="view-controls" role="group" aria-label="Choose directory layout">
+          <button class="view-button active" id="grid-view" type="button" aria-pressed="true">
+            <span aria-hidden="true">▦</span> Grid
+          </button>
+          <button class="view-button" id="list-view" type="button" aria-pressed="false">
+            <span aria-hidden="true">☰</span> List
+          </button>
+        </div>
+      </div>
+      <div id="members" class="member-grid" aria-live="polite" aria-busy="true">
+        <p class="loading-message">Loading Abuja businesses…</p>
+      </div>
+    </section>
+    <p class="sample-note"><strong>Student project note:</strong> These are sample directory records created for this assignment. Replace sample contact details and links with verified business information before publishing as a real directory.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section class="footer-contact" aria-label="Chamber contact information">
+        <h2>Abuja Chamber of Commerce</h2>
+        <p>Abuja, Federal Capital Territory, Nigeria</p>
+        <p>Email: info@abujachamber.example</p>
+        <p>Phone: +234 706 068 2113</p>
+      </section>
+      <section class="footer-project" aria-label="Student and project information">
+        <p>© <span id="current-year"></span> Abuja Chamber of Commerce</p>
+        <p>Developed by Martins Chinedu Amorin</p>
+        <p>WDD 231 · BYU-Idaho</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
