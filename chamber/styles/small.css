@@ -59,14 +59,9 @@ h1 { margin: .35rem 0 .6rem; color: var(--green); font-size: clamp(2rem, 7vw, 3.
 .footer-inner { width: min(1160px, 100%); margin: 0 auto; display: grid; gap: 1.5rem; }
 .footer-contact h2 { margin-bottom: .5rem; color: #ffe0a0; font-size: 1.1rem; }
 .footer-contact p, .footer-project p { margin: .25rem 0; font-size: .9rem; }
-.footer-project { color: #e1ebe3; }
+
+.footer-project { 
+  color: #e1ebe3; 
+}
 @media (max-width: 360px) { .brand strong { font-size: .94rem; } .view-button { padding-inline: .65rem; } }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  background: var(--page);
-  color: var(--text);
-  font-family: "Roboto", Arial, sans-serif;
-  line-height: 1.6;
-}
