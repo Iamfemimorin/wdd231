@@ -1,27 +1,43 @@
-WDD 231 W02 CHAMBER DIRECTORY — ABUJA
+WDD 231 W03 CHAMBER HOME PAGE — ABUJA
 
-START HERE
-1. Open the wdd231 folder in VS Code.
-2. Install/enable the Live Server extension if needed.
-3. Right-click chamber/directory.html and choose "Open with Live Server".
-4. Check that all seven sample businesses load and that Grid and List buttons work.
+WHAT WAS UPDATED
+- Added chamber/index.html as the home page.
+- Added a responsive hero image using an <img> element.
+- Added a Join the Chamber call-to-action.
+- Added Current Events, Weather, and Member Spotlights sections.
+- Added chamber/styles/home.css for the home-page layout.
+- Added chamber/scripts/home.js for navigation, OpenWeatherMap weather, and random member spotlights.
+- Updated the directory brand link so the chamber logo returns to index.html.
 
-BEFORE SUBMISSION
-1. Replace YOUR-USERNAME in the two Open Graph URLs in chamber/directory.html with your GitHub username.
-2. Update the Open Graph image URL to a public, absolute URL in your GitHub Pages repository. For example:
-   https://YOUR-USERNAME.github.io/wdd231/chamber/images/og-abujachamber.png
-3. Replace the sample contact details in the footer with the contact details you want to publish, or clearly identify them as project placeholders.
-4. Check your instructor's site-plan document and adjust the navigation labels, planned colors, and contact details to match it.
-5. Commit and push the wdd231 folder to your GitHub Pages repository.
-6. Submit:
-   https://YOUR-USERNAME.github.io/wdd231/chamber/directory.html
+IMPORTANT: OPENWEATHERMAP API KEY
+The supplied OpenWeatherMap API key has been configured in chamber/scripts/home.js so the weather section can load live data for Abuja.
 
-PROJECT CONTENTS
-- directory.html: directory page, metadata and Open Graph properties
-- data/members.json: seven sample member records
-- scripts/members.js: fetch + async/await, DOM rendering, grid/list controls, footer dates, responsive menu
-- styles/normalize.css, small.css, large.css: reset and responsive styles
-- images/: small SVG favicon and seven lightweight business illustrations
+Note: because this is a client-side WDD 231 project hosted on GitHub Pages, the API key will be visible in the browser source. If your OpenWeatherMap account supports it, restrict the key to the appropriate website/API usage or rotate it after the course assignment if needed.
 
-IMPORTANT
-The seven business records and contact details are sample data for the coursework, not verified real businesses. Website URLs use example.com. Replace them with verified information if your instructor expects real listings. The .example email addresses and sample phone numbers are placeholders.
+Run chamber/index.html with VS Code Live Server and confirm the current temperature, weather description, and 3-day forecast appear.
+
+HOME PAGE REQUIREMENTS COVERED
+- Consistent header/navigation/footer
+- Home-page title and metadata
+- Scalable hero image using img
+- Join Chamber CTA
+- Current events section
+- Current weather section
+- 3-day forecast
+- Two or three randomly selected Silver/Gold member spotlights
+- Spotlight data loaded from data/members.json using fetch and async/await
+- Responsive mobile/large-screen layout
+- Accessible skip link, headings, labels, alt text, focus styles, and live regions
+
+TESTING
+Open the page through VS Code Live Server rather than file:// so fetch() can load members.json.
+
+Then check:
+- Browser console for JavaScript errors
+- Mobile and desktop responsive layouts
+- Lighthouse: Accessibility, Best Practices, SEO
+- CSS Overview for contrast
+- W03 Chamber Home audit
+
+GITHUB PAGES URL
+https://iamfemimorin.github.io/wdd231/chamber/index.html

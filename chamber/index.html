@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to the Abuja Chamber of Commerce. Connect with businesses, discover events, check local weather, and explore chamber member spotlights in Abuja, Nigeria.">
+  <meta name="author" content="Martins Chinedu Amorin">
+  <meta name="theme-color" content="#123d2a">
+  <title>Home | Abuja Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Home | Abuja Chamber of Commerce">
+  <meta property="og:description" content="Connect with businesses, discover events, and grow with the Abuja Chamber of Commerce.">
+  <meta property="og:image" content="https://iamfemimorin.github.io/wdd231/chamber/images/og-abujachamber.png">
+  <meta property="og:url" content="https://iamfemimorin.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Abuja Chamber of Commerce home">
+      <img src="images/favicon.svg" alt="" width="48" height="48">
+      <span><strong>Abuja Chamber</strong><small>of Commerce</small></span>
+    </a>
+
+    <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="home-container">
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="images/og-abujachamber.png" alt="Abuja Chamber of Commerce connecting businesses and creating opportunities" width="1200" height="630" fetchpriority="high">
+      <div class="hero-content">
+        <p class="eyebrow">ABUJA · FEDERAL CAPITAL TERRITORY</p>
+        <h1 id="hero-title">Connect. Grow. Thrive.</h1>
+        <p>Building stronger business relationships and creating opportunities across Abuja.</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section class="home-section events-section" aria-labelledby="events-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT'S HAPPENING</p>
+          <h2 id="events-heading">Current Events</h2>
+        </div>
+        <a href="discover.html">View more opportunities</a>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card">
+          <p class="event-date"><span>18</span> NOV</p>
+          <div>
+            <h3>Abuja Business Connect</h3>
+            <p>Meet local entrepreneurs, exchange ideas, and discover practical ways to grow your business.</p>
+            <p><strong>9:00 AM · Chamber Hall</strong></p>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <p class="event-date"><span>25</span> NOV</p>
+          <div>
+            <h3>Digital Growth Workshop</h3>
+            <p>Learn how digital tools can help small businesses improve visibility, customer service, and sales.</p>
+            <p><strong>10:00 AM · Abuja Business Hub</strong></p>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <p class="event-date"><span>02</span> DEC</p>
+          <div>
+            <h3>Members Networking Evening</h3>
+            <p>Build valuable professional relationships with chamber members from different industries.</p>
+            <p><strong>5:30 PM · Chamber Hall</strong></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section weather-section" aria-labelledby="weather-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LOCAL CONDITIONS</p>
+          <h2 id="weather-heading">Abuja Weather</h2>
+        </div>
+        <p class="weather-updated" id="weather-updated">Loading current conditions…</p>
+      </div>
+
+      <div class="weather-layout">
+        <article class="current-weather" aria-label="Current Abuja weather">
+          <div class="weather-icon-wrap">
+            <span id="weather-icon" class="weather-icon" aria-hidden="true">☀</span>
+          </div>
+          <div>
+            <p class="weather-temp" id="current-temp">--°C</p>
+            <p class="weather-description" id="weather-description">Loading weather…</p>
+          </div>
+        </article>
+
+        <div class="forecast" aria-labelledby="forecast-heading">
+          <h3 id="forecast-heading">3-Day Forecast</h3>
+          <div id="forecast-list" class="forecast-list" aria-live="polite">
+            <p class="loading-message">Loading forecast…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section spotlight-section" aria-labelledby="spotlight-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MEMBER HIGHLIGHTS</p>
+          <h2 id="spotlight-heading">Member Spotlights</h2>
+        </div>
+        <a href="directory.html">Explore the directory</a>
+      </div>
+
+      <div id="spotlights" class="spotlight-grid" aria-live="polite" aria-busy="true">
+        <p class="loading-message">Loading member spotlights…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section class="footer-contact" aria-label="Chamber contact information">
+        <h2>Abuja Chamber of Commerce</h2>
+        <p>Abuja, Federal Capital Territory, Nigeria</p>
+        <p>Email: info@abujachamber.example</p>
+        <p>Phone: +234 706 068 2113</p>
+      </section>
+
+      <section class="footer-project" aria-label="Student and project information">
+        <p>© <span id="current-year"></span> Abuja Chamber of Commerce</p>
+        <p>Developed by Martins Chinedu Amorin</p>
+        <p>WDD 231 · BYU-Idaho</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
