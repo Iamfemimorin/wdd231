@@ -182,7 +182,7 @@ async function loadWeather() {
     `https://api.openweathermap.org/data/2.5/forecast?lat=${CHAMBER_LATITUDE}` +
     `&lon=${CHAMBER_LONGITUDE}&appid=${OPENWEATHER_API_KEY}&units=metric`;
 
-  if (OPENWEATHER_API_KEY === "80b08294ce2791b2690a586feb48b903") {
+  if (OPENWEATHER_API_KEY === "a6fecd5debc82938efb4e1ebc38c5a9e") {
     document.querySelector("#current-temp").textContent = "--°C";
     document.querySelector("#weather-description").textContent =
       "Add your OpenWeatherMap API key in scripts/home.js";
