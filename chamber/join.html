@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Learn about joining the Abuja Chamber of Commerce.">
+  <meta name="description" content="Apply for membership with the Abuja Chamber of Commerce and choose the membership level that fits your organization.">
   <meta name="author" content="Martins Chinedu Amorin">
   <meta name="theme-color" content="#123d2a">
   <meta property="og:title" content="Join | Abuja Chamber of Commerce">
@@ -20,90 +20,193 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
   <script src="scripts/simple-nav.js" defer></script>
+  <script src="scripts/join.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Abuja Chamber of Commerce home">
       <img src="images/favicon.svg" alt="" width="48" height="48">
       <span><strong>Abuja Chamber</strong><small>of Commerce</small></span>
     </a>
+
     <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
       <span class="menu-icon" aria-hidden="true"></span>
     </button>
+
     <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="directory.html">Directory</a>
       <a href="join.html" aria-current="page">Join</a>
-      <a href="discover.html" >Discover</a>
+      <a href="discover.html">Discover</a>
     </nav>
   </header>
+
   <main id="main-content" class="page-container">
     <section class="page-intro">
-  <p class="eyebrow">BECOME A MEMBER</p>
-  <h1>Join the Chamber</h1>
-  <p class="intro-copy">Membership registration will be added in the next project phase. For now, this page confirms the home-page call to action and navigation path.</p>
-</section>
-<section class="directory-section" aria-labelledby="join-heading">
-  <div class="member-card">
-    <div class="member-content">
-      <h2 id="join-heading">Membership Application</h2>
-      <form method="get" action="thankyou.html">
-        <label>
-          First Name
-          <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
-        </label>
+      <p class="eyebrow">BECOME A MEMBER</p>
+      <h1>Join the Chamber</h1>
+      <p class="intro-copy">Apply for membership with the Abuja Chamber of Commerce and choose the membership level that best supports your organization.</p>
+    </section>
 
-        <label>
-          Last Name
-          <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
-        </label>
+    <div class="join-layout">
+      <section class="application-section" aria-labelledby="application-heading">
+        <h2 id="application-heading">Membership Application</h2>
+        <p class="form-instruction">Complete the form below. Required fields are marked with an asterisk.</p>
 
-        <label>
-          Organizational Title
-          <input type="text" name="organizationTitle" title="Enter your title within the organization. Use at least seven letters, spaces, or hyphens." autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
-        </label>
+        <form class="membership-form" method="get" action="thankyou.html">
+          <p class="required-note"><span aria-hidden="true">*</span> Required field</p>
 
-        <label>
-          Email Address
-          <input type="email" name="email" title="Enter a valid email address" autocomplete="email" required>
-        </label>
+          <label for="firstName">
+            First Name <span aria-hidden="true">*</span>
+            <input id="firstName" type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+          </label>
 
-        <label>
-          Mobile Phone Number
-          <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
-        </label>
+          <label for="lastName">
+            Last Name <span aria-hidden="true">*</span>
+            <input id="lastName" type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+          </label>
 
-        <label>
-          Organization Name
-          <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
-        </label>
+          <label for="organizationTitle">
+            Organizational Title
+            <input id="organizationTitle" type="text" name="organizationTitle" title="Enter at least 7 letters, spaces, or hyphens for your organizational title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+          </label>
 
-        <label>
-          Membership Level
-          <select name="membershipLevel" title="Choose a membership level" required>
-            <option value="" selected disabled>Select a membership level</option>
-            <option value="np">NP Membership</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select>
-        </label>
+          <label for="email">
+            Email Address <span aria-hidden="true">*</span>
+            <input id="email" type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="example@email.com" required>
+          </label>
 
-        <label>
-          Organization Description
-          <textarea name="description" title="Briefly describe your business or organization" rows="5"></textarea>
-        </label>
+          <label for="phone">
+            Mobile Phone Number <span aria-hidden="true">*</span>
+            <input id="phone" type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+          </label>
 
-        <input type="hidden" name="timestamp" id="timestamp">
+          <label for="organization">
+            Organization Name <span aria-hidden="true">*</span>
+            <input id="organization" type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+          </label>
 
-        <input type="submit" value="Submit Membership Application">
-      </form>
+          <label for="membershipLevel">
+            Membership Level <span aria-hidden="true">*</span>
+            <select id="membershipLevel" name="membershipLevel" title="Choose a membership level" autocomplete="off" required>
+              <option value="" selected disabled>Select a membership level</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label for="description">
+            Organization Description
+            <textarea id="description" name="description" title="Briefly describe your business or organization" autocomplete="off" rows="5"></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp" title="Date and time the form was loaded" autocomplete="off">
+
+          <button class="submit-button" type="submit" title="Submit membership application">Submit Membership Application</button>
+        </form>
+      </section>
+
+      <section class="membership-levels" aria-labelledby="levels-heading">
+        <h2 id="levels-heading">Membership Levels</h2>
+        <p class="levels-intro">Explore the benefits available at each level.</p>
+
+        <article class="level-card level-np">
+          <div>
+            <p class="level-kicker">NO FEE</p>
+            <h3>NP Membership</h3>
+            <p>For nonprofit organizations looking to connect and participate.</p>
+          </div>
+          <a class="modal-link" href="#np-modal" data-modal="np-modal">View benefits</a>
+        </article>
+
+        <article class="level-card level-bronze">
+          <div>
+            <p class="level-kicker">₦25,000 / YEAR</p>
+            <h3>Bronze Membership</h3>
+            <p>Build visibility and access practical member opportunities.</p>
+          </div>
+          <a class="modal-link" href="#bronze-modal" data-modal="bronze-modal">View benefits</a>
+        </article>
+
+        <article class="level-card level-silver">
+          <div>
+            <p class="level-kicker">₦50,000 / YEAR</p>
+            <h3>Silver Membership</h3>
+            <p>Gain stronger promotion, training, and networking benefits.</p>
+          </div>
+          <a class="modal-link" href="#silver-modal" data-modal="silver-modal">View benefits</a>
+        </article>
+
+        <article class="level-card level-gold">
+          <div>
+            <p class="level-kicker">₦100,000 / YEAR</p>
+            <h3>Gold Membership</h3>
+            <p>Receive the highest level of visibility, access, and support.</p>
+          </div>
+          <a class="modal-link" href="#gold-modal" data-modal="gold-modal">View benefits</a>
+        </article>
+      </section>
     </div>
-  </div>
-</section>
+
+    <dialog class="benefit-modal" id="np-modal" aria-labelledby="np-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close NP Membership benefits">×</button>
+        <p class="level-kicker">NO FEE</p>
+        <h2 id="np-modal-title">NP Membership Benefits</h2>
+        <ul>
+          <li>Access to selected chamber networking opportunities.</li>
+          <li>Participation in eligible nonprofit events and activities.</li>
+          <li>Connection with other local organizations.</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog class="benefit-modal" id="bronze-modal" aria-labelledby="bronze-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close Bronze Membership benefits">×</button>
+        <p class="level-kicker">₦25,000 / YEAR</p>
+        <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
+        <ul>
+          <li>All applicable NP networking opportunities.</li>
+          <li>Member training and business development sessions.</li>
+          <li>Business listing in the chamber directory.</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog class="benefit-modal" id="silver-modal" aria-labelledby="silver-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close Silver Membership benefits">×</button>
+        <p class="level-kicker">₦50,000 / YEAR</p>
+        <h2 id="silver-modal-title">Silver Membership Benefits</h2>
+        <ul>
+          <li>All Bronze membership benefits.</li>
+          <li>Additional training and networking opportunities.</li>
+          <li>Enhanced business promotion and event discounts.</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog class="benefit-modal" id="gold-modal" aria-labelledby="gold-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close Gold Membership benefits">×</button>
+        <p class="level-kicker">₦100,000 / YEAR</p>
+        <h2 id="gold-modal-title">Gold Membership Benefits</h2>
+        <ul>
+          <li>All Silver membership benefits.</li>
+          <li>Priority opportunities for business promotion and spotlight features.</li>
+          <li>Premium event access, discounts, and networking opportunities.</li>
+        </ul>
+      </div>
+    </dialog>
   </main>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <section class="footer-contact" aria-label="Chamber contact information">
@@ -112,6 +215,7 @@
         <p>Email: info@abujachamber.example</p>
         <p>Phone: +234 706 068 2113</p>
       </section>
+
       <section class="footer-project" aria-label="Student and project information">
         <p>© <span id="current-year"></span> Abuja Chamber of Commerce</p>
         <p>Developed by Martins Chinedu Amorin</p>

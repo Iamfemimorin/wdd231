@@ -6,10 +6,12 @@
   align-items: start;
   margin-top: 1.8rem;
 }
+
 .application-section,
 .membership-levels {
   min-width: 0;
 }
+
 .application-section h2,
 .membership-levels h2,
 .submission-summary h2 {
@@ -17,12 +19,14 @@
   font-size: 1.5rem;
   margin-bottom: .45rem;
 }
+
 .form-instruction,
 .levels-intro,
 .submission-summary > p {
   color: var(--muted);
   margin-bottom: 1rem;
 }
+
 .membership-form {
   display: grid;
   gap: 1rem;
@@ -32,50 +36,53 @@
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
+
 .membership-form label {
   display: grid;
   gap: .4rem;
   color: var(--ink);
   font-weight: 700;
 }
-.membership-form label > span {
+
+.membership-form label > span,
+.required-note span {
   color: #9a3500;
+  font-weight: 800;
 }
+
 .membership-form input:not([type="hidden"]):not([type="submit"]),
 .membership-form select,
 .membership-form textarea {
   width: 100%;
   min-height: 46px;
   padding: .7rem .75rem;
-  border: 1px solid #9aa99d;
+  border: 1px solid #6c7a70;
   border-radius: 6px;
   background: #fff;
   color: var(--ink);
   font: inherit;
   font-weight: 400;
 }
+
 .membership-form textarea {
   resize: vertical;
   min-height: 120px;
 }
+
 .membership-form input:focus,
 .membership-form select:focus,
 .membership-form textarea:focus {
-  outline: 3px solid #c58a24;
+  outline: 3px solid #9a5700;
   outline-offset: 2px;
   border-color: var(--green);
 }
-.membership-form small {
-  color: var(--muted);
-  font-size: .82rem;
-  font-weight: 400;
-}
+
 .required-note {
   margin: 0;
   color: var(--muted);
   font-size: .85rem;
 }
-.required-note span { color: #9a3500; font-weight: 800; }
+
 .submit-button,
 .back-to-chamber {
   display: inline-block;
@@ -85,23 +92,32 @@
   border: 0;
   border-radius: 6px;
   background: var(--green);
-  color: white;
+  color: #fff;
   font: inherit;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
+
 .submit-button:hover,
 .back-to-chamber:hover {
   background: #1d593d;
 }
+
 .membership-levels {
   display: grid;
   gap: .9rem;
 }
-.membership-levels h2 { margin-bottom: 0; }
-.levels-intro { margin: -.45rem 0 .15rem; }
+
+.membership-levels h2 {
+  margin-bottom: 0;
+}
+
+.levels-intro {
+  margin: -.45rem 0 .15rem;
+}
+
 .level-card {
   display: flex;
   flex-direction: column;
@@ -112,17 +128,20 @@
   border: 1px solid var(--line);
   border-left: 5px solid var(--gold);
   border-radius: 9px;
-  background: white;
+  background: #fff;
   box-shadow: var(--shadow);
   animation: level-arrive .65s ease both;
 }
+
 .level-card:nth-of-type(2) { animation-delay: .12s; }
 .level-card:nth-of-type(3) { animation-delay: .24s; }
 .level-card:nth-of-type(4) { animation-delay: .36s; }
 .level-card:nth-of-type(5) { animation-delay: .48s; }
-.level-bronze { border-left-color: #9b622e; }
-.level-silver { border-left-color: #687985; }
-.level-gold { border-left-color: #bd8a12; }
+
+.level-bronze { border-left-color: #7a4b20; }
+.level-silver { border-left-color: #53646f; }
+.level-gold { border-left-color: #8a6200; }
+
 .level-kicker {
   margin: 0 0 .2rem;
   color: #805000;
@@ -130,22 +149,26 @@
   font-weight: 900;
   letter-spacing: .13em;
 }
+
 .level-card h3 {
   margin: 0 0 .25rem;
   color: var(--green);
   font-size: 1.2rem;
 }
+
 .level-card p:not(.level-kicker) {
   margin: 0;
   color: var(--muted);
   font-size: .92rem;
 }
+
 .modal-link {
   align-self: flex-start;
   color: #175c3b;
   font-weight: 800;
   text-underline-offset: 3px;
 }
+
 .modal-link:focus-visible,
 .modal-close:focus-visible,
 .submit-button:focus-visible,
@@ -153,6 +176,7 @@
   outline: 3px solid #9a5700;
   outline-offset: 3px;
 }
+
 .benefit-modal {
   width: min(540px, calc(100% - 2rem));
   max-height: min(80vh, 650px);
@@ -160,26 +184,37 @@
   border: 0;
   border-radius: 12px;
   color: var(--ink);
-  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .28);
 }
+
 .benefit-modal::backdrop {
   background: rgba(9, 28, 18, .68);
 }
+
 .modal-content {
   position: relative;
   padding: 1.6rem;
 }
+
 .modal-content h2 {
   margin: .2rem 2rem .65rem 0;
   color: var(--green);
   font-size: 1.55rem;
 }
-.modal-content p:not(.level-kicker) { color: var(--muted); }
+
+.modal-content p:not(.level-kicker) {
+  color: var(--muted);
+}
+
 .modal-content ul {
   padding-left: 1.25rem;
   margin-bottom: 0;
 }
-.modal-content li { margin: .55rem 0; }
+
+.modal-content li {
+  margin: .55rem 0;
+}
+
 .modal-close {
   position: absolute;
   top: .65rem;
@@ -194,52 +229,85 @@
   line-height: 1;
   cursor: pointer;
 }
-.thankyou-page { max-width: 900px; }
+
+.thankyou-page {
+  max-width: 900px;
+}
+
 .submission-summary {
   margin-top: 1.8rem;
   padding: 1.4rem;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: white;
+  background: #fff;
   box-shadow: var(--shadow);
 }
+
 .submitted-details {
   display: grid;
   gap: .8rem;
   margin: 1.2rem 0 1.5rem;
 }
+
 .submitted-details div {
   padding: .75rem;
   border-radius: 6px;
   background: #f2f6f1;
 }
+
 .submitted-details dt {
   color: var(--muted);
   font-size: .82rem;
   font-weight: 700;
 }
+
 .submitted-details dd {
   margin: .15rem 0 0;
   color: var(--green);
   font-weight: 800;
   overflow-wrap: anywhere;
 }
-.back-to-chamber { width: auto; }
+
+.back-to-chamber {
+  width: auto;
+}
 
 @keyframes level-arrive {
-  from { opacity: 0; transform: translateY(14px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .level-card { animation: none; }
-  *, *::before, *::after { scroll-behavior: auto !important; }
+  .level-card {
+    animation: none;
+  }
+
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+  }
 }
+
 @media (min-width: 700px) {
   .join-layout {
     grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
     gap: 1.5rem;
   }
-  .membership-form { padding: 1.5rem; }
-  .level-card { min-height: 145px; }
-  .submitted-details { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .membership-form {
+    padding: 1.5rem;
+  }
+
+  .level-card {
+    min-height: 145px;
+  }
+
+  .submitted-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
