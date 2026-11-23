@@ -48,9 +48,58 @@
 <section class="directory-section" aria-labelledby="join-heading">
   <div class="member-card">
     <div class="member-content">
-      <h2 id="join-heading">Membership Interest</h2>
-      <p class="member-description">Businesses in Abuja can connect with other organizations, discover opportunities, and participate in chamber events.</p>
-      <p><strong>Next step:</strong> The membership form will be developed in a future assignment.</p>
+      <h2 id="join-heading">Membership Application</h2>
+      <form method="get" action="thankyou.html">
+        <label>
+          First Name
+          <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name
+          <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title
+          <input type="text" name="organizationTitle" title="Enter your title within the organization. Use at least seven letters, spaces, or hyphens." autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" title="Enter a valid email address" autocomplete="email" required>
+        </label>
+
+        <label>
+          Mobile Phone Number
+          <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Organization Name
+          <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level
+          <select name="membershipLevel" title="Choose a membership level" required>
+            <option value="" selected disabled>Select a membership level</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Organization Description
+          <textarea name="description" title="Briefly describe your business or organization" rows="5"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Membership Application">
+      </form>
     </div>
   </div>
 </section>
