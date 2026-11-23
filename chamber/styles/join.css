@@ -288,8 +288,8 @@
     animation: none;
   }
 
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
+  html {
+    scroll-behavior: auto;
   }
 }
 
