@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Apply for membership with the Abuja Chamber of Commerce and connect with businesses across Nigeria's capital.">
+  <meta name="description" content="Learn about joining the Abuja Chamber of Commerce.">
   <meta name="author" content="Martins Chinedu Amorin">
   <meta name="theme-color" content="#123d2a">
-  <title>Join the Chamber | Abuja Chamber of Commerce</title>
+  <meta property="og:title" content="Join | Abuja Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership with the Abuja Chamber of Commerce and connect with business leaders, events, training, and growth opportunities across Abuja, Nigeria.">
+  <meta property="og:image" content="https://iamfemimorin.github.io/wdd231/chamber/images/og-abujachamber.png">
+  <meta property="og:image:alt" content="Abuja Chamber of Commerce connecting businesses and creating opportunities">
+  <meta property="og:url" content="https://iamfemimorin.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+  <title>Join | Abuja Chamber of Commerce</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <link rel="stylesheet" href="styles/join.css">
   <script src="scripts/simple-nav.js" defer></script>
-  <script src="scripts/join.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -29,139 +33,25 @@
       <a href="index.html">Home</a>
       <a href="directory.html">Directory</a>
       <a href="join.html" aria-current="page">Join</a>
-      <a href="discover.html">Discover</a>
+      <a href="discover.html" >Discover</a>
     </nav>
   </header>
-
-  <main id="main-content" class="page-container join-page">
+  <main id="main-content" class="page-container">
     <section class="page-intro">
-      <p class="eyebrow">GROW WITH ABUJA</p>
-      <h1>Become a Chamber Member</h1>
-      <p class="intro-copy">Connect with business leaders, discover new opportunities, and help strengthen Abuja's business community. Complete the application form to get started.</p>
-    </section>
-
-    <div class="join-layout">
-      <section class="application-section" aria-labelledby="application-heading">
-        <h2 id="application-heading">Membership Application</h2>
-        <p class="form-instruction">Fields marked as required must be completed before submitting.</p>
-        <form method="get" action="thankyou.html" class="membership-form">
-          <label>
-            First Name <span aria-hidden="true">*</span>
-            <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
-          </label>
-
-          <label>
-            Last Name <span aria-hidden="true">*</span>
-            <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
-          </label>
-
-          <label>
-            Organizational Title
-            <input type="text" name="organizationTitle" title="Enter your title within the organization. Use at least seven letters, spaces, or hyphens." autocomplete="organization-title" pattern="[A-Za-z -]{7,}" placeholder="e.g. Managing Director">
-            <small>Use at least 7 characters: letters, spaces, and hyphens only.</small>
-          </label>
-
-          <label>
-            Email Address <span aria-hidden="true">*</span>
-            <input type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="name@example.com" required>
-          </label>
-
-          <label>
-            Mobile Phone Number <span aria-hidden="true">*</span>
-            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
-          </label>
-
-          <label>
-            Business / Organization Name <span aria-hidden="true">*</span>
-            <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
-          </label>
-
-          <label>
-            Membership Level <span aria-hidden="true">*</span>
-            <select name="membershipLevel" title="Choose a membership level" required>
-              <option value="" selected disabled>Select a membership level</option>
-              <option value="np">NP Membership – Non-profit (No fee)</option>
-              <option value="bronze">Bronze Membership</option>
-              <option value="silver">Silver Membership</option>
-              <option value="gold">Gold Membership</option>
-            </select>
-          </label>
-
-          <label>
-            Business / Organization Description
-            <textarea name="description" title="Briefly describe your business or organization" rows="5" placeholder="Tell us about your organization, its services, and its goals."></textarea>
-          </label>
-
-          <input type="hidden" name="timestamp" id="timestamp">
-
-          <p class="required-note"><span aria-hidden="true">*</span> Required field</p>
-          <input class="submit-button" type="submit" value="Submit Membership Application">
-        </form>
-      </section>
-
-      <aside class="membership-levels" aria-labelledby="levels-heading">
-        <h2 id="levels-heading">Explore Membership Levels</h2>
-        <p class="levels-intro">Choose the level that best supports your organization's goals.</p>
-
-        <article class="level-card level-np">
-          <div><p class="level-kicker">COMMUNITY</p><h3>NP Membership</h3><p>For eligible non-profit organizations.</p></div>
-          <a href="#np-modal" class="modal-link" data-modal="np-modal">View benefits</a>
-        </article>
-
-        <article class="level-card level-bronze">
-          <div><p class="level-kicker">STARTER</p><h3>Bronze Membership</h3><p>Build connections and grow visibility.</p></div>
-          <a href="#bronze-modal" class="modal-link" data-modal="bronze-modal">View benefits</a>
-        </article>
-
-        <article class="level-card level-silver">
-          <div><p class="level-kicker">GROWTH</p><h3>Silver Membership</h3><p>More opportunities to promote your business.</p></div>
-          <a href="#silver-modal" class="modal-link" data-modal="silver-modal">View benefits</a>
-        </article>
-
-        <article class="level-card level-gold">
-          <div><p class="level-kicker">PREMIUM</p><h3>Gold Membership</h3><p>Enhanced access, exposure, and support.</p></div>
-          <a href="#gold-modal" class="modal-link" data-modal="gold-modal">View benefits</a>
-        </article>
-      </aside>
+  <p class="eyebrow">BECOME A MEMBER</p>
+  <h1>Join the Chamber</h1>
+  <p class="intro-copy">Membership registration will be added in the next project phase. For now, this page confirms the home-page call to action and navigation path.</p>
+</section>
+<section class="directory-section" aria-labelledby="join-heading">
+  <div class="member-card">
+    <div class="member-content">
+      <h2 id="join-heading">Membership Interest</h2>
+      <p class="member-description">Businesses in Abuja can connect with other organizations, discover opportunities, and participate in chamber events.</p>
+      <p><strong>Next step:</strong> The membership form will be developed in a future assignment.</p>
     </div>
-
-    <dialog class="benefit-modal" id="np-modal" aria-labelledby="np-title">
-      <div class="modal-content">
-        <button class="modal-close" type="button" aria-label="Close NP Membership benefits">×</button>
-        <p class="level-kicker">COMMUNITY</p><h2 id="np-title">NP Membership Benefits</h2>
-        <p>Designed for eligible non-profit organizations working to strengthen the community.</p>
-        <ul><li>No membership fee.</li><li>Access to selected chamber networking events.</li><li>Opportunity to connect with other non-profit organizations.</li><li>Access to selected chamber news and business resources.</li></ul>
-      </div>
-    </dialog>
-
-    <dialog class="benefit-modal" id="bronze-modal" aria-labelledby="bronze-title">
-      <div class="modal-content">
-        <button class="modal-close" type="button" aria-label="Close Bronze Membership benefits">×</button>
-        <p class="level-kicker">STARTER</p><h2 id="bronze-title">Bronze Membership Benefits</h2>
-        <p>A practical starting point for businesses seeking connections and visibility.</p>
-        <ul><li>All available NP-level community benefits.</li><li>Member directory listing.</li><li>Access to member networking events.</li><li>Discounted admission to selected training sessions.</li></ul>
-      </div>
-    </dialog>
-
-    <dialog class="benefit-modal" id="silver-modal" aria-labelledby="silver-title">
-      <div class="modal-content">
-        <button class="modal-close" type="button" aria-label="Close Silver Membership benefits">×</button>
-        <p class="level-kicker">GROWTH</p><h2 id="silver-title">Silver Membership Benefits</h2>
-        <p>For organizations ready to increase their reach and participation.</p>
-        <ul><li>All Bronze-level benefits.</li><li>Priority consideration for business event participation.</li><li>Discounts on selected chamber workshops.</li><li>Business spotlight opportunity on the chamber website, subject to availability.</li><li>Invitations to selected member roundtables.</li></ul>
-      </div>
-    </dialog>
-
-    <dialog class="benefit-modal" id="gold-modal" aria-labelledby="gold-title">
-      <div class="modal-content">
-        <button class="modal-close" type="button" aria-label="Close Gold Membership benefits">×</button>
-        <p class="level-kicker">PREMIUM</p><h2 id="gold-title">Gold Membership Benefits</h2>
-        <p>Our highest participation level, with expanded visibility and engagement opportunities.</p>
-        <ul><li>All Silver-level benefits.</li><li>Featured business spotlight opportunities, subject to editorial scheduling.</li><li>Priority invitations to selected leadership and networking events.</li><li>Enhanced promotional opportunities through chamber channels.</li><li>Additional discounts on selected chamber events and training.</li></ul>
-      </div>
-    </dialog>
+  </div>
+</section>
   </main>
-
   <footer class="site-footer">
     <div class="footer-inner">
       <section class="footer-contact" aria-label="Chamber contact information">
